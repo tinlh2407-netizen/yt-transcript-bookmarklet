@@ -2,9 +2,9 @@
 
 **Một bookmarklet duy nhất — lấy transcript YouTube sạch, không quảng cáo, không dấu thời gian, sẵn sàng paste vào bất kỳ đâu.**
 
-Không cần cài extension. Không cần backend. Transcript của bạn không được lưu trữ hay gửi đi đâu — chỉ xử lý ngay trong trình duyệt, trên đúng trang YouTube bạn đang mở. (Bookmark chỉ chứa 1 đoạn loader ngắn, tự tải file `bookmarklet.js` từ GitHub mỗi lần bấm — xem mục "Cách hoạt động kỹ thuật" bên dưới.)
+Không cần cài extension. Không cần backend. Không gửi dữ liệu đi đâu cả — toàn bộ code nằm ngay trong bookmark, chạy 100% trong trình duyệt của bạn, trên đúng trang YouTube bạn đang mở.
 
-👉 **[Cài đặt bằng 1 cú kéo-thả](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
+👉 **[Trang cài đặt từng bước](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
 
 ---
 
@@ -19,14 +19,21 @@ YouTube có transcript, nhưng lấy nó ra dùng lại rất phiền: phải m�
 3. Nó tự tìm và mở panel transcript nếu chưa mở, đợi transcript load, tự dọn sạch timestamp/rác, và hiện popup với nội dung sẵn để bấm **Copy**.
 4. Dán vào Google Docs, Claude, Notion, ChatGPT... tùy bạn.
 
-Không lưu trữ transcript, không theo dõi hành vi. Mã nguồn đầy đủ nằm trong [`bookmarklet.js`](./bookmarklet.js) — đọc được, audit được.
+Không lưu trữ, không gọi API ngoài, không theo dõi hành vi. Mã nguồn đầy đủ nằm trong [`bookmarklet.js`](./bookmarklet.js) — đọc được, audit được.
 
-## Cách hoạt động kỹ thuật (cho ai muốn audit)
+## Vì sao cài bằng copy-paste, không kéo-thả?
 
-Bookmark chỉ chứa một đoạn "loader" ~250 ký tự — đủ ngắn để kéo-thả không bị trình duyệt cắt cụt (bug đã gặp ở bản đầu, khi nhét thẳng toàn bộ ~6.600 ký tự code vào URL bookmark). Loader này tạo 1 thẻ `<script>` trỏ tới [`bookmarklet.js`](./bookmarklet.js) trên GitHub và chạy nó ngay trong tab hiện tại. Hệ quả:
+Toàn bộ code (~6.600 ký tự) nằm ngay trong URL của bookmark — không tải gì từ ngoài về (YouTube chặn script domain ngoài bằng Content-Security-Policy, nên kiến trúc "loader tải code từ CDN" không hoạt động được trên YouTube). URL dài như vậy khi **kéo-thả** dễ bị một số trình duyệt cắt cụt giữa chừng → bookmark hỏng im lặng, bấm không thấy gì. **Copy-paste qua Bookmark Manager** giữ nguyên vẹn 100% — đây là cách cài chính thức. Trang cài đặt có hướng dẫn từng bước kèm nút copy sẵn.
 
-- Mỗi lần bấm, trình duyệt tải bản mới nhất của `bookmarklet.js` — sửa lỗi/nâng cấp không cần người dùng cài lại.
-- Có gọi ra ngoài để tải chính đoạn code (không phải để gửi dữ liệu của bạn đi) — nếu bạn muốn zero network call, dùng bản inline đầy đủ trong [`bookmarklet.min.js`](./bookmarklet.min.js) và cài bằng copy-paste thủ công (không kéo-thả, vì URL quá dài dễ bị cắt cụt).
+## Bấm bookmark mà không thấy gì?
+
+Thứ tự xử lý:
+
+1. Cuộn xuống phần **mô tả video** (bấm "...more" / "Xem thêm").
+2. Tìm và bấm nút **"Show transcript"** / **"Hiện bản chép lời"** — panel transcript sẽ mở bên phải video.
+3. **Bấm bookmark lại lần nữa** — lần này chắc chắn lấy được.
+4. Nếu video không có nút "Show transcript" → YouTube chưa có transcript cho video đó, tool không thể lấy.
+5. Nếu vẫn không được: right-click bookmark → Edit → kiểm tra ô URL phải bắt đầu bằng `javascript:` và kết thúc bằng `%3B`. Bị cắt cụt → xóa, cài lại bằng copy-paste.
 
 ## Giới hạn đã biết
 
@@ -46,7 +53,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 ---
 
-*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/)** (thêm link Substack của bạn vào đây).*
+*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](#)** (thêm link Substack của bạn vào đây).*
 
 ---
 
@@ -54,9 +61,9 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 **A single bookmarklet — grab a clean YouTube transcript, no ads, no timestamps, ready to paste anywhere.**
 
-No extension to install. No backend. Your transcript is never stored or sent anywhere — processed entirely client-side, on the YouTube page you already have open. (The bookmark itself is a short loader that fetches `bookmarklet.js` fresh from GitHub each time you click — see "How it works" in the Vietnamese section above for details.)
+No extension to install. No backend. No data leaves your browser — the entire code lives inside the bookmark itself and runs 100% client-side, on the YouTube page you already have open.
 
-👉 **[One-click install](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
+👉 **[One-click install](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
 
 ## The problem
 
@@ -83,4 +90,4 @@ MIT.
 
 ---
 
-*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/)** (add your Substack link here).*
+*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](#)** (add your Substack link here).*
