@@ -57,7 +57,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 ---
 
-*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/)**.*
+*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/?utm_source=github&utm_medium=repo&utm_campaign=yt-bookmarklet)**.*
 
 ---
 
@@ -94,4 +94,4 @@ MIT.
 
 ---
 
-*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/)**.*
+*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/?utm_source=github&utm_medium=repo&utm_campaign=yt-bookmarklet)**.*
