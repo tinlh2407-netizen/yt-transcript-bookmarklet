@@ -4,7 +4,7 @@
 
 Không cần cài extension. Không cần backend. Transcript của bạn không được lưu trữ hay gửi đi đâu — chỉ xử lý ngay trong trình duyệt, trên đúng trang YouTube bạn đang mở. (Bookmark chỉ chứa 1 đoạn loader ngắn, tự tải file `bookmarklet.js` từ GitHub mỗi lần bấm — xem mục "Cách hoạt động kỹ thuật" bên dưới.)
 
-👉 **[Cài đặt bằng 1 cú kéo-thả](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
+👉 **[Cài đặt bằng 1 cú kéo-thả](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
 
 ---
 
@@ -56,7 +56,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 No extension to install. No backend. Your transcript is never stored or sent anywhere — processed entirely client-side, on the YouTube page you already have open. (The bookmark itself is a short loader that fetches `bookmarklet.js` fresh from GitHub each time you click — see "How it works" in the Vietnamese section above for details.)
 
-👉 **[One-click install](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
+👉 **[One-click install](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
 
 ## The problem
 
