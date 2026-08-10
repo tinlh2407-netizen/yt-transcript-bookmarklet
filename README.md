@@ -4,7 +4,7 @@
 
 Không cần cài extension. Không cần backend. Không gửi dữ liệu đi đâu cả — toàn bộ code nằm ngay trong bookmark, chạy 100% trong trình duyệt của bạn, trên đúng trang YouTube bạn đang mở.
 
-👉 **[Trang cài đặt từng bước](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
+👉 **[Trang cài đặt từng bước](https://tinlh2407-netizen.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
 
 ---
 
@@ -25,15 +25,19 @@ Không lưu trữ, không gọi API ngoài, không theo dõi hành vi. Mã ngu�
 
 Toàn bộ code (~6.600 ký tự) nằm ngay trong URL của bookmark — không tải gì từ ngoài về (YouTube chặn script domain ngoài bằng Content-Security-Policy, nên kiến trúc "loader tải code từ CDN" không hoạt động được trên YouTube). URL dài như vậy khi **kéo-thả** dễ bị một số trình duyệt cắt cụt giữa chừng → bookmark hỏng im lặng, bấm không thấy gì. **Copy-paste qua Bookmark Manager** giữ nguyên vẹn 100% — đây là cách cài chính thức. Trang cài đặt có hướng dẫn từng bước kèm nút copy sẵn.
 
-## Bấm bookmark mà không thấy gì?
+## Cách dùng đúng để lấy transcript ĐẦY ĐỦ nhất
 
-Thứ tự xử lý:
+**Nên mở panel transcript trước, rồi mới bấm bookmark:**
 
 1. Cuộn xuống phần **mô tả video** (bấm "...more" / "Xem thêm").
-2. Tìm và bấm nút **"Show transcript"** / **"Hiện bản chép lời"** — panel transcript sẽ mở bên phải video.
-3. **Bấm bookmark lại lần nữa** — lần này chắc chắn lấy được.
-4. Nếu video không có nút "Show transcript" → YouTube chưa có transcript cho video đó, tool không thể lấy.
-5. Nếu vẫn không được: right-click bookmark → Edit → kiểm tra ô URL phải bắt đầu bằng `javascript:` và kết thúc bằng `%3B`. Bị cắt cụt → xóa, cài lại bằng copy-paste.
+2. Bấm nút **"Show transcript"** / **"Hiện bản chép lời"** — panel transcript mở bên phải video.
+3. Đợi panel hiện đầy đủ nội dung, **rồi mới bấm bookmark** → kết quả trọn vẹn nhất.
+
+Nếu bấm bookmark khi panel chưa mở, tool sẽ cố tự tìm và mở panel giúp bạn — nhưng cách này có thể lấy thiếu hoặc không lấy được (tùy tốc độ load của YouTube). Mở sẵn panel trước luôn là cách chắc chắn nhất.
+
+Nếu video không có nút "Show transcript" → YouTube chưa có transcript cho video đó, tool không thể lấy.
+
+Nếu bookmark bấm hoàn toàn không có phản ứng gì: right-click bookmark → Edit → kiểm tra ô URL phải bắt đầu bằng `javascript:` và kết thúc bằng `%3B`. Bị cắt cụt → xóa, cài lại bằng copy-paste.
 
 ## Giới hạn đã biết
 
