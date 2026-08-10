@@ -4,7 +4,7 @@
 
 Không cần cài extension. Không cần backend. Không gửi dữ liệu đi đâu cả — toàn bộ code nằm ngay trong bookmark, chạy 100% trong trình duyệt của bạn, trên đúng trang YouTube bạn đang mở.
 
-👉 **[Trang cài đặt từng bước](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
+👉 **[Trang cài đặt từng bước](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
 
 ---
 
@@ -53,7 +53,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 ---
 
-*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](#)** (thêm link Substack của bạn vào đây).*
+*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/)** (thêm link Substack của bạn vào đây).*
 
 ---
 
@@ -63,7 +63,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 No extension to install. No backend. No data leaves your browser — the entire code lives inside the bookmark itself and runs 100% client-side, on the YouTube page you already have open.
 
-👉 **[One-click install](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
+👉 **[One-click install](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
 
 ## The problem
 
@@ -90,4 +90,4 @@ MIT.
 
 ---
 
-*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](#)** (add your Substack link here).*
+*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/)** (add your Substack link here).*
