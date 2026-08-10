@@ -4,7 +4,7 @@
 
 Không cần cài extension. Không cần backend. Không gửi dữ liệu đi đâu cả — mọi thứ chạy ngay trong trình duyệt của bạn, trên đúng trang YouTube bạn đang mở.
 
-👉 **[Cài đặt bằng 1 cú kéo-thả](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
+👉 **[Cài đặt bằng 1 cú kéo-thả](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
 
 ---
 
@@ -39,7 +39,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 ---
 
-*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](#)** (https://thegreatinterviews.substack.com/).*
+*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/)** (https://thegreatinterviews.substack.com/).*
 
 ---
 
@@ -49,7 +49,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 No extension to install. No backend. No data leaves your browser — everything runs client-side, on the YouTube page you already have open.
 
-👉 **[One-click install](https://TIN_GITHUB_USERNAME.github.io/yt-transcript-bookmarklet/)**
+👉 **[One-click install](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)**
 
 ## The problem
 
@@ -76,4 +76,4 @@ MIT.
 
 ---
 
-*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](#)** (https://thegreatinterviews.substack.com/).*
+*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/)** (https://thegreatinterviews.substack.com/).*
