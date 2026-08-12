@@ -4,7 +4,7 @@
 
 Không cần cài extension. Không cần backend. Không gửi dữ liệu đi đâu cả — toàn bộ code nằm ngay trong bookmark, chạy 100% trong trình duyệt của bạn, trên đúng trang YouTube bạn đang mở.
 
-👉 **[Trang cài đặt từng bước](https://tinlh2407-netizen.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
+👉 **[Trang cài đặt từng bước](https://tinlh2407-netizen.github.io/yt-transcript-bookmarklet/)** — copy-paste 1 đoạn mã vào Bookmark Manager, 2 phút, không cần biết code.
 
 ---
 
@@ -45,6 +45,8 @@ Nếu bookmark bấm hoàn toàn không có phản ứng gì: right-click bookma
 - Nếu YouTube đổi cấu trúc DOM, script có thể cần cập nhật lại selector — đây là rủi ro chung của mọi tool dựa vào DOM scraping, không có gì đảm bảo vĩnh viễn.
 - Video quá dài hoặc transcript load chậm có thể cần bấm lại bookmarklet lần 2.
 
+**Vì sao DOM-scraping thay vì gọi caption API (kiểu `yt-dlp`)?** Đánh đổi có chủ đích: cách gọi API/CLI (như `yt-dlp`) bền hơn và có fallback sang Whisper transcription khi video không có caption — nhưng cần cài Python/công cụ dòng lệnh trên máy. Mục tiêu của tool này là **zero-install cho người không rành kỹ thuật**, nên chọn đọc trực tiếp panel transcript đã render sẵn trong trình duyệt, đổi lấy sự tiện lợi bằng việc phụ thuộc cấu trúc DOM. Nếu bạn cần độ bền cao hơn hoặc cần transcribe video không có caption, `yt-dlp` + Whisper là lựa chọn phù hợp hơn.
+
 ## Cài đặt
 
 Xem trang cài đặt: **[link GitHub Pages ở trên](#)** — kéo nút vào thanh bookmark là xong, không cần biết code.
@@ -57,7 +59,7 @@ MIT — dùng, sửa, chia sẻ tự do.
 
 ---
 
-*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/?utm_source=github&utm_medium=repo&utm_campaign=yt-bookmarklet)**.*
+*Được build bằng AI, bởi một người không viết code chuyên nghiệp — mình là dân strategic planning, dùng Claude làm công cụ build. Theo dõi hành trình build sản phẩm bằng AI và các bài phân tích/phỏng vấn dài tại **[The Great Interviews](https://thegreatinterviews.substack.com/)** (thêm link Substack của bạn vào đây).*
 
 ---
 
@@ -88,10 +90,12 @@ No storage, no external API calls, no tracking. Full source in [`bookmarklet.js`
 - If YouTube changes its DOM structure, selectors may need updating — a general risk of any DOM-scraping tool.
 - Very long videos or slow transcript loads may need a second click.
 
+**Why DOM-scraping instead of a caption API (à la `yt-dlp`)?** A deliberate trade-off: CLI/API tools like `yt-dlp` are more robust and can fall back to Whisper transcription when no caption exists — but require installing Python/command-line tooling. This tool optimizes for **zero-install, non-technical users**, so it reads the transcript panel already rendered in the browser, trading some robustness for convenience. If you need higher reliability or need to transcribe videos without captions, `yt-dlp` + Whisper is the better fit.
+
 ## License
 
 MIT.
 
 ---
 
-*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/?utm_source=github&utm_medium=repo&utm_campaign=yt-bookmarklet)**.*
+*Built with AI by a non-engineer — I work in strategic planning, and use Claude as my build tool. I write long-form interview essays and share the AI-build journey at **[The Great Interviews](https://thegreatinterviews.substack.com/)** (add your Substack link here).*
